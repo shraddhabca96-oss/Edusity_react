@@ -1,0 +1,225 @@
+/* ===== Testimonials Section ===== */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 24px;
+  position: relative;
+  background-color: #ffffff;
+  color: #08003a;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* ===== Testimonial Slider ===== */
+.slider {
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #f9f9ff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  padding: 32px 20px;
+  transition: all 0.4s ease-in-out;
+  min-height: 320px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.user-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007bff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.user-info span {
+  font-size: 14px;
+  color: #666;
+}
+
+.user-review {
+  font-style: italic;
+  line-height: 1.6;
+  font-size: 15px;
+  max-width: 520px;
+  color: #333;
+  padding: 0 10px;
+}
+
+/* ===== Arrow Buttons ===== */
+.arrow-btn {
+  background: #007bff;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 16px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.arrow-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* ===== Contact Section (Shared) ===== */
+.contact-col p {
+  max-width: 450px;
+  line-height: 1.6;
+  color: #333;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.contact-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-col ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  color: #333;
+  font-size: 15px;
+}
+
+/* ===== Tablet View ===== */
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 45px 18px;
+  }
+
+  .slide {
+    padding: 26px 18px;
+    min-height: 280px;
+  }
+
+  .user-img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .user-info h3 {
+    font-size: 16px;
+  }
+
+  .user-info span {
+    font-size: 13px;
+  }
+
+  .user-review {
+    font-size: 14px;
+    max-width: 90%;
+  }
+
+  .arrow-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+  }
+
+  .contact-col p {
+    font-size: 14px;
+  }
+
+  .contact-col ul li {
+    font-size: 14px;
+  }
+}
+
+/* ===== Mobile View (Phones) ===== */
+@media (max-width: 480px) {
+  .testimonials {
+    padding: 35px 16px;
+  }
+
+  .slide {
+    padding: 22px 14px;
+    border-radius: 16px;
+    min-height: 260px;
+  }
+
+  .user-img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .user-info h3 {
+    font-size: 15px;
+  }
+
+  .user-info span {
+    font-size: 12.5px;
+  }
+
+  .user-review {
+    font-size: 13.5px;
+    line-height: 1.5;
+    padding: 0 6px;
+  }
+
+  .arrow-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .contact-col ul li {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
+}
+
+/* ===== Ultra-Small Screens (Under 360px) ===== */
+@media (max-width: 360px) {
+  .user-img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .user-review {
+    font-size: 12.5px;
+  }
+
+  .arrow-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 15px;
+  }
+}

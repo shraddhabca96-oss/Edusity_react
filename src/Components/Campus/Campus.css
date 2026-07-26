@@ -1,0 +1,95 @@
+.campus {
+  width: 90%;
+  margin: 80px auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Optional title styling */
+.campus h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+/* ===== GALLERY STYLING ===== */
+.gallery {
+  display: flex;
+  flex-wrap: wrap; /* ✅ allows wrapping on small screens */
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* spacing between images */
+  margin-bottom: 40px;
+}
+
+.gallery img {
+  width: 23%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== BUTTON STYLING ===== */
+.btn.dark-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.dark-btn img {
+  width: 18px;
+  margin-left: 8px;
+}
+
+.btn.dark-btn:hover {
+  background-color: #0056b3;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablets (2 images per row) */
+@media (max-width: 992px) {
+  .gallery img {
+    width: 45%;
+  }
+}
+
+/* Mobile (1 image per row) */
+@media (max-width: 600px) {
+  .campus {
+    width: 95%;
+    margin: 40px auto;
+    padding: 0 5%;
+  }
+
+  .gallery {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .gallery img {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .btn.dark-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+}

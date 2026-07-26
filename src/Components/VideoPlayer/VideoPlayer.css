@@ -1,0 +1,131 @@
+/* ===== Section Layout ===== */
+.video-section {
+  width: 100%;
+  min-height: 100vh; /* full screen height */
+  padding: 60px 20px;
+  background-color: #f9faff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+  /* To keep video at bottom */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ===== Container ===== */
+.video-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* ===== Text Styles ===== */
+.video-title {
+  font-size: 26px;
+  color: #0a2e73;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.video-description {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  padding: 0 10px;
+}
+
+/* ===== Video Box ===== */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin-top: auto; /* pushes video down */
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+/* ===== Play / Pause Button ===== */
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 123, 255, 0.85);
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.play-btn:hover {
+  background-color: #0056b3;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* ===== Responsive Design ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .video-section {
+    padding: 50px 15px;
+  }
+
+  .video-title {
+    font-size: 22px;
+  }
+
+  .video-description {
+    font-size: 15px;
+  }
+
+  .play-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .video-section {
+    padding: 40px 10px;
+  }
+
+  .video-title {
+    font-size: 20px;
+  }
+
+  .video-description {
+    font-size: 14px;
+  }
+
+  .video-wrapper {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .play-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* ===== Smooth Scroll ===== */
+html {
+  scroll-behavior: smooth;
+}
