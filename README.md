@@ -83,4 +83,26 @@ If you need help or want this pushed to your GitHub remote from this machine, en
 
 ---
 
+## Screenshot
+
+
+| Home | About |
+|------|-----------|
+| ![Home](./screenshot/homepage.jpg) | ![About](./screenshot/About.png) |
+
+| Campus first | Campus second |
+|------|-----------|
+| ![Campus first](./screenshot/Campus.jpg) | ![Campus second](./screenshot/Campus1.jpg) |
+
+| Program | Testimonial first |
+|------|-----------|
+| ![Program](./screenshot/Program.jpg) | ![Testimonial](./screenshot/Testimonial.jpg) |
+
+| Testimonial second | Testimonial third |
+|------|-----------|
+| ![Testimonial second](./screenshot/Testiomnial1.png) | ![Testimonial third](./screenshot/Testimonial2.png) |
+
+
+
+
 Generated/updated README to document local development and repo structure.
